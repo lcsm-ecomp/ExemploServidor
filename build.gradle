@@ -27,12 +27,7 @@ kotlin {
                 implementation kotlin('stdlib-common')
             }
         }
-        commonTest {
-            dependencies {
-                implementation kotlin('test-common')
-                implementation kotlin('test-annotations-common')
-            }
-        }
+
         jvmMain {
             dependencies {
                 implementation kotlin('stdlib-jdk8')
@@ -41,22 +36,13 @@ kotlin {
                 implementation "ch.qos.logback:logback-classic:$logback_version"
             }
         }
-        jvmTest {
-            dependencies {
-                implementation kotlin('test')
-                implementation kotlin('test-junit')
-            }
-        }
+        
         jsMain {
             dependencies {
                 implementation kotlin('stdlib-js')
             }
         }
-        jsTest {
-            dependencies {
-                implementation kotlin('test-js')
-            }
-        }
+        
     }
 }
 
