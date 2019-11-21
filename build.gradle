@@ -36,24 +36,21 @@ kotlin {
                 implementation "ch.qos.logback:logback-classic:$logback_version"
             }
         }
-        
+
         jsMain {
             dependencies {
                 implementation kotlin('stdlib-js')
             }
         }
-        
+
     }
+
+
 }
 
-jvmJar {
-    dependsOn(jsBrowserWebpack)
-    from(new File(jsBrowserWebpack.entry.name, jsBrowserWebpack.outputPath))
-}
 
-task run(type: JavaExec, dependsOn: [jvmJar]) {
-    group = "application"
-    main = "sample.SampleJvmKt"
-    classpath(configurations.jvmRuntimeClasspath, jvmJar)
-    args = []
+task copiar(type:Copy) {
+    from "$buildDir/js/packages/${rootProject.name}/kotlin/${rootProject.name}.js",
+            "$buildDir/js/packages/${rootProject.name}/kotlin/lib/kotlin.js"
+    into "dados_estaticos/"
 }

@@ -4,9 +4,9 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="JavaScript " useProjectSettings="false" isTestModule="true" externalProjectId="OlaServidor">
         <sourceSets>
-          <sourceSet>OlaServidor.jsMain</sourceSet>
-          <sourceSet>OlaServidor.commonMain</sourceSet>
           <sourceSet>OlaServidor.commonTest</sourceSet>
+          <sourceSet>OlaServidor.commonMain</sourceSet>
+          <sourceSet>OlaServidor.jsMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
