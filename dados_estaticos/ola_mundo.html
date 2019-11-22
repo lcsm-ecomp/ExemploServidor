@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ola do servidor</title>
+</head>
+<body>
+Esta página carrega um script feito em kotlin
+<p><hr>
+
+<button onclick="ServidorWeb.digaOla()"> Pressione </button>
+<p><hr>
+
+<div id="area1">
+Uma área de texto
+</div>
+
+<script src="lib/kotlin.js"></script> <!-- carrega a biblioteca padrão de kotlin -->
+<script src="ServidorWeb.js"></script> <!-- carrega o código compilado --!>
+
+
+
+<script>
+    ServidorWeb.digaOla();  //Chama a função digaOla de kotlin
+    ServidorWeb.modifica();  //Chama a função digaOla de kotlin
+</script>
+</body>
+</html>
