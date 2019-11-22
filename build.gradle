@@ -41,6 +41,7 @@ kotlin {
             dependencies {
                 implementation kotlin('stdlib-js')
             }
+            
         }
 
     }
@@ -48,9 +49,3 @@ kotlin {
 
 }
 
-
-task copiar(type:Copy) {
-    from "$buildDir/js/packages/${rootProject.name}/kotlin/${rootProject.name}.js",
-            "$buildDir/js/packages/${rootProject.name}/kotlin/lib/kotlin.js"
-    into "dados_estaticos/"
-}

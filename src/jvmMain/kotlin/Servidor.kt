@@ -41,6 +41,7 @@ fun main() {
             }
             static("static") {
                 files("dados_estaticos")
+                files("build/js/packages/ServidorWeb/kotlin/")
             }
         }
     }.start(wait = true)
