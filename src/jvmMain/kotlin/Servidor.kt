@@ -16,6 +16,7 @@ import kotlinx.html.title
 
 // -1 : Nao entrou 0 : Não Jogou 1 : Pedra 2 : Papel 3 : Tesoura
 
+
 data class Jogada(var jogadaA:Int, var jogadaB:Int)
 
 var jogadas = mutableListOf<Jogada>()
